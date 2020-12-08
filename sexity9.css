@@ -1,0 +1,165 @@
+body {
+    background-color: #ffff;
+    font-family: arial, sans-serif;
+    font-weight: 500;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    padding: 0;
+    margin-top: 27px;
+}
+
+.container {
+    display: flex;
+}
+
+p {
+    width: 100%;
+    margin-left: 0px;
+    text-align: auto;
+}
+
+.logomenu {
+    vertical-align: auto;
+}
+
+#sexity9 {
+    width: 150px;
+    padding-top: 40px;
+}
+
+#search {
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    width: 400px;
+    height: 36px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 70px;
+    padding-left: 15px;
+}
+
+.likecart {
+    margin-left: 820px;
+    margin-top: -43px;
+    position: absolute;
+    width: 150px;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.searchbutton {
+    height: 40px;
+    background-color: #d60a14;
+    border: 1px solid #d60a14;
+    width: 120px;
+    border-radius: 0 5px 5px 0;
+    margin-left: 0px;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 500px;
+    font-size: 17px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    padding: 15px;
+}
+
+.topoption {
+    margin-top: 0px;
+    margin-right: 50px;
+    padding: 0px 0;
+    width: auto;
+    vertical-align: top;
+    list-style: none;
+    float: right;
+    position: static;
+    font-size: 14px;
+}
+
+hr {
+    margin-top: 30px;
+    border: 0.1px solid grey;
+}
+
+.menu {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: -0.1px;
+    margin-left: -53px;
+    border-top: 1px;
+    border-color: grey;
+}
+
+.blackfridayblock {
+    background-color: #d60a14;
+    font-size: 9px;
+    text-align: center;
+    padding: 3px;
+    color: rgb(255, 255, 255);
+}
+
+.qty {
+    font-size: 13px;
+}
+
+#numbercount {
+    border-radius: 4px;
+    border: 0.5px solid grey;
+    height: 15px;
+    padding: 1px;
+}
+
+#addcart {
+    background-color: #d60a14;
+    height: 40px;
+    width: 150px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#saveitem {
+    background-color: #ffffff;
+    height: 40px;
+    width: 150px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.newsletter {
+    margin-left: 50px;
+    position: static;
+    font-family: arial;
+}
+
+.subscribe {
+    margin-left: 50px;
+    position: absolute;
+    font-size: 10px;
+    margin-top: -20px;
+    color: grey;
+}
+
+.Searchbox {
+    Margin-left: 400px;
+    margin-top: -120px;
+}
