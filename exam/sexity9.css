@@ -46,8 +46,8 @@ p {
 }
 
 .likecart {
-    margin-left: 820px;
-    margin-top: -43px;
+    margin-left: 920px;
+    margin-top: -37px;
     position: absolute;
     width: 150px;
     font-size: 30px;
@@ -77,9 +77,21 @@ li {
     padding: 15px;
 }
 
+.breadcrums {
+    padding: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.breadcrumsmenu {
+    background-color: rgb(231, 231, 231);
+    font-size: 12px;
+    padding: 3px;
+}
+
 .topoption {
     margin-top: 0px;
-    margin-right: 50px;
+    margin-right: 0px;
     padding: 0px 0;
     width: auto;
     vertical-align: top;
@@ -146,13 +158,14 @@ hr {
 }
 
 .newsletter {
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-top: 200px;
     position: static;
     font-family: arial;
 }
 
 .subscribe {
-    margin-left: 50px;
+    margin-left: 30px;
     position: absolute;
     font-size: 10px;
     margin-top: -20px;
@@ -160,6 +173,340 @@ hr {
 }
 
 .Searchbox {
-    Margin-left: 400px;
+    Margin-left: 380px;
     margin-top: -120px;
+}
+
+
+/*Container2*/
+
+#b20 {
+    border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 1695px;
+    width: 100%;
+    height: 350px;
+    background: inherit;
+    background-color: rgba(158, 158, 158, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border: none;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-radius: 0px;
+}
+
+
+/*Logo*/
+
+#b6 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 15px;
+    top: 1680px;
+    width: 155px;
+    height: 1px;
+    font-size: 40px;
+    font-family: 'Monotype Corsiva Bold', 'Monotype Corsiva', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #ED1B24;
+    background: inherit;
+}
+
+#b7 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 65px;
+    top: 1740px;
+    width: 270px;
+    height: 19px;
+    font-size: 15px;
+    font-family: 'Apple-Chancery', 'Apple Chancery Chancery', 'Apple Chancery', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+
+/*Contact info*/
+
+#b8 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 15px;
+    top: 1800px;
+    width: 364px;
+    height: 60px;
+    font-size: 17px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+
+/*Media*/
+
+#b9 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 15px;
+    top: 1905px;
+    width: 26px;
+    height: 20px;
+    color: #FFFFFF;
+}
+
+.button3 {
+    color: #FFFFFF;
+    border: none;
+    background-color: inherit;
+    font-size: 25px;
+}
+
+#b10 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 95px;
+    top: 1903px;
+    width: 26px;
+    height: 20px;
+    color: #FFFFFF;
+}
+
+.button4 {
+    color: #FFFFFF;
+    border: none;
+    background-color: inherit;
+    font-size: 25px;
+}
+
+#b11 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 170px;
+    top: 1903px;
+    width: 26px;
+    height: 20px;
+    color: #FFFFFF;
+}
+
+.button5 {
+    color: #FFFFFF;
+    border: none;
+    background-color: inherit;
+    font-size: 28px;
+}
+
+
+/*Manual*/
+
+
+/*Contact*/
+
+#b12 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 391px;
+    top: 1780px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.button6 {
+    background: inherit;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+
+/*Return*/
+
+#b13 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 391px;
+    top: 1814px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.button7 {
+    background: inherit;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-right: none;
+    border-left: none;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+
+/*Delivery*/
+
+#b14 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 391px;
+    top: 1854px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.button8 {
+    background: inherit;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+
+/*Privacy*/
+
+#b15 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 391px;
+    top: 1894px;
+    width: 179px;
+    height: 40px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.button9 {
+    background: inherit;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+
+/*Terms*/
+
+#b16 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 391px;
+    top: 1936px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.button10 {
+    background: inherit;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-right: none;
+    border-left: none;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+
+/*Copyright*/
+
+#b17 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 165px;
+    top: 999px;
+    width: 500px;
+    height: 16px;
+    font-size: 14px;
+    text-align: left;
+    background: inherit;
+    align-self: center;
+    padding-bottom: 80px;
+    color: #FFFFFF;
+}
+
+
+/*Payment*/
+
+#b18 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 660px;
+    top: 1774px;
+    width: 300px;
+    height: 40px;
+    font-size: 17px;
+    font-family: 'Arial-BoldMT', 'Arial Bold', 'Arial', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#b19 {
+    display: flex;
+    border-width: 0px;
+    position: absolute;
+    left: 620px;
+    top: 1824px;
+    width: 340px;
+    height: 150px;
+}
+
+#b19_img {
+    max-width: 100%;
+    height: auto;
+    background: inherit;
+}
+
+.lowermenu {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    margin-top: -1550px;
 }
