@@ -3,6 +3,9 @@
 
 
 
+
+
+
 /*section 1*/
 
 
@@ -94,7 +97,7 @@ li {
 
 #sexity9 {
     width: 150px;
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
 #search {
@@ -104,7 +107,7 @@ li {
     width: 500px;
     height: 40px;
     position: absolute;
-    margin-left: 250px;
+    margin-left: 100px;
     margin-top: 100px;
     padding-left: 15px;
 }
@@ -117,23 +120,23 @@ li {
     margin-left: 0px;
     position: absolute;
     margin-top: 100px;
-    margin-left: 730px;
+    margin-left: 500px;
     font-size: 17px;
     color: white;
 }
 
 .likecart {
-    margin-left: 895px;
-    margin-top: 43px;
+    margin-left: 930px;
+    margin-top: -40px;
     position: absolute;
-    width: 150px;
+    width: 100px;
     font-size: 30px;
     padding-left: 10px;
     
 }
 
 hr {
-    margin-top: 110px;
+    margin-top: 25px;
     border: 0.1px solid grey;
 }
 
@@ -1169,7 +1172,7 @@ height: 30px;
     display: flex;
     border-width: 0px;
     position: absolute;
-    left: 844px;
+    left: 866px;
     top: 1580px;
     width: 350px; 
     height: 67px;
@@ -1196,7 +1199,7 @@ height: 30px;
     position: absolute;
     left: 0px;
     top: 1695px;
-    width: 1000px;
+    width: 1024px;
     height: 350px;
     background: inherit;
     background-color: rgba(158, 158, 158, 1);
