@@ -526,7 +526,7 @@ option {
     position: absolute;
     left: 340px;
     top: 565px;
-    width: 50px;
+    width: 56px;
     height: 41px;
     display: flex;
     font-family: 'Arial Bold', 'Arial', sans-serif;
@@ -576,7 +576,7 @@ option {
     position: absolute;
     left: 566px;
     top: 565px;
-    width: 51px;
+    width: 56px;
     height: 20px;
     display: flex;
     font-family: 'Arial Bold', 'Arial', sans-serif;
@@ -625,7 +625,7 @@ option {
     position: absolute;
     left: 796px;
     top: 565px;
-    width: 49px;
+    width: 54px;
     height: 41px;
     display: flex;
     font-family: 'Arial Bold', 'Arial', sans-serif;
@@ -674,7 +674,7 @@ option {
     position: absolute;
     left: 340px;
     top: 825px;
-    width: 52px;
+    width: 56px;
     height: 41px;
     display: flex;
     font-family: 'Arial Bold', 'Arial', sans-serif;
@@ -723,7 +723,7 @@ option {
     position: absolute;
     left: 576px;
     top: 825px;
-    width: 49px;
+    width: 54px;
     height: 41px;
     display: flex;
     font-family: 'Arial Bold', 'Arial', sans-serif;
@@ -774,7 +774,7 @@ option {
     position: absolute;
     left: 796px;
     top: 825px;
-    width: 53px;
+    width: 57px;
     height: 19px;
     display: flex;
     font-family: 'Arial Bold', 'Arial', sans-serif;
@@ -825,7 +825,7 @@ option {
     position: absolute;
     left: 340px;
     top: 1085px;
-    width: 52px;
+    width: 57px;
     height: 41px;
     display: flex;
     font-family: 'Arial Bold', 'Arial', sans-serif;
@@ -1073,7 +1073,7 @@ option {
     position: absolute;
     left: 810px;
     top: 1332px;
-    width: 51px;
+    width: 56px;
     height: 27px;
     color: #d60a14;
     text-align: center;
