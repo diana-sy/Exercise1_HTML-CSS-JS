@@ -19,14 +19,14 @@
     <div>
         <div>
             <div class="logomenu">
-                <img id="sexity9" src="sexity9logo.jpg">
+                <img onclick="document.location='Page 1 copy.html'" id="sexity9" src="sexity9logo.jpg">
                 <input id="search" type="text" name="search" value placeholder="I'm searching for..." class="input-text">
                 <button class="searchbutton" type="submit" title="Search">
                    <span>Search</span>
                 </button>
                 <div class="likecart">
                     <i class="far fa-heart"></i>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-shopping-cart" onclick="document.location='Productcart.html'"></i>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
         <ul style="padding-left:5px">
             <li class="breadcrums">Home</li>
             <li class="breadcrums">/ Sex Toys</li>
-            <li class="breadcrums">/ 10X silicone Vibrating Egg Black</li>
+            <li class="breadcrums" style="color:black">/ 10X silicone Vibrating Egg Black</li>
         </ul>
     </div>
     <div class="container">
@@ -70,7 +70,7 @@
             </p>
             <div class="qty">Quantity:</div>
             <input id="numbercount" type="number" name="quantity" min="1" value="0" max="10"><br>
-            <button id="addcart" type="button" title="add to cart"><span>Add To Cart</span></button> <br>
+            <button onclick="document.location='Productcart.html'" id="addcart" type="button" title="add to cart"><span>Add To Cart</span></button> <br>
             <button id="saveitem" type="button" title="Save Item"><span>Save Item</span></button>
         </div>
     </div>
