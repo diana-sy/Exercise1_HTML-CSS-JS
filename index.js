@@ -268,8 +268,8 @@ function showDetailView(productElementId) {
    }
 
   
-   let productCart = document.querySelector('#productCart');  
-   productCart.innerHTML = productCart     
+   let productCart = document.querySelector('#cartPage');  
+   productCart.innerText = productCart     
   
    
 
