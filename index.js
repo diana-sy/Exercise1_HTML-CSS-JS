@@ -154,24 +154,31 @@ function showDetailView(productElementId) {
         </p>
         <div class="qty">Quantity:</div>
         <input id="numbercount" type="number" name="quantity" min="1" value="0" max="10"><br>
-        <button onClick="cartPage('#productCart')" id="addcart" type="button" title="add to cart"><span>Add To Cart</span></button> <br>
+        <button onclick="cartPage()" style=""id="addcart" type="button" title="add to cart"><span>Add To Cart</span></button> <br>
         <button id="saveitem" type="button" title="Save Item"><span>Save Item</span></button>
    </div> </div>`;
 
    
    }
+     let cartArray = [];
+     let quantitiesArray = [];
+
 
    //ProductCart
 
-   function cartPage(cart) {
+   function cartPage(productCartId) {
+    console.log(productCartId);
+   const productInfo = productList.find(productElement => productElement.Id ===  productCartId);
+
 
     document.querySelector('#dataPage1').style.display = "none";
     document.querySelector('#Page1').style.display = "none";
     document.querySelector('#b1').style.display = "none";
     document.querySelector('#dataPage2').style.display = "none";
 
-
-       let productCart = document.querySelector('#productCart');
+    
+       
+    let productCart = "";
         productCart.innerHTML = `
         <div class="container">
         <div class="itemCart">
@@ -185,13 +192,10 @@ function showDetailView(productElementId) {
                     </tr>
                 </thead>
                 <tbody>
-
                 <tr class="cartProduct">
-                <td>Silicone Vibrating Egg Black</td>
+                <td>${productInfo.model}</td>
                 <td></td>
                 <td></td>
-
-
              
              
            <td><button id="remove" style="cursor: pointer;" type="button"<i class="far fa-trash-alt"></i></button></td>
@@ -200,70 +204,58 @@ function showDetailView(productElementId) {
            </tr>
             <tr>
                 <td>
-                    <img class="cart-items" src="vibegg.jpg">
+                    <img class="cart-items" src="${productInfo.image}">
                 </td>
-                <td>&#8364 49.40</td>
+                <td>&#8364 ${productInfo.price}</td>
                 <td>
                     <input type="number" name="quantity" min="1" value="1" max="10">
                 </td>
-                <td>&#8364 49.40</td>
+                <td>&#8364 ${productInfo.price}</td>
             </tr>
-                        
 
-
-
-                </tbody>
-            </table>
+    <div id="summary" >
+    <h1 class="bom">Summary</h1>
+    <p>Estimated Shipping and Tax</p>
+    <label for="country">Country</label><br>
+    <select name="Country" id="Country">
+        <option value="finland">Finland</option>
+        <option value="estonia">Estonia</option>
+        <option value="france">France</option>
+        <option value="germany">Germany</option>
+    </select><br><br>
+    <label for="state/province">State/Province</label><br>
+    <select name="Country" id="Country">
+        <option value="espoo">Espoo</option>
+        <option value="helsinki">Helsinki</option>
+        <option value="oulu">Oulu</option>
+        <option value="tampere">Tampere</option>
+    </select><br><br>
+    <label for="zip/postalcode">Zip/Postal Code</label><br>
+    <input type="text" id="zippostalcode"><br><br>
+    <div>
+        <input type="radio" name="shipping" checked valve="normalmail"> Normal Mail<br>
+        <input type="radio" name="shipping" value="expressmail"> Express Mail
+        <br>
+        <hr class="line">
+        <div>
+            <span class="subtotal">Subtotal</span>
         </div>
-        <div id="summary" class="item">
-            <h2 class="summary">Summary</h2>
-            <p>Estimated Shipping and Tax</p>
-            <label for="country">Country</label><br>
-            <select name="Country" id="Country">
-                <option value="finland">Finland</option>
-                <option value="estonia">Estonia</option>
-                <option value="france">France</option>
-                <option value="germany">Germany</option>
-            </select><br><br>
-            <label for="state/province">State/Province</label><br>
-            <select name="Country" id="Country">
-                <option value="espoo">Espoo</option>
-                <option value="helsinki">Helsinki</option>
-                <option value="oulu">Oulu</option>
-                <option value="tampere">Tampere</option>
-            </select><br><br>
-            <label for="zip/postalcode">Zip/Postal Code</label><br>
-            <input type="text" id="zippostalcode"><br><br>
-            <div>
-                <input type="radio" name="shipping" checked valve="normalmail"> Normal Mail<br>
-                <input type="radio" name="shipping" value="expressmail"> Express Mail
-                <br>
         
-                <div class="ordertotal">
-                    <span><b>Order Total</b></span>
-                </div>
-
-
-
-                <div class="totalprice"><b>&#8364  ?</b></div>
-
-
-
-                <hr class="line">
-                <label for="discount">Apply Discount Code</label><br>
-                <input type="text" id="discount">
-                <br><br>
-                <input class="apply" type="submit" value="Apply">
-                <div>
-                    <input class="checkout" type="submit" value="Process to Checkout">
-                </div>
-            </div>
+        <div class="ordertotal">
+            <span><b>Order Total</b></span>
         </div>
-    </div>`;
-   
-       
-}
-
+        <div class="totalprice"><b>&#8364 ?</b></div>
+        <hr class="line">
+        <label for="discount">Apply Discount Code</label><br>
+        <input type="text" id="discount">
+        <br><br>
+        <input class="apply" type="submit" value="Apply">
+        <div>
+            <input class="checkout" type="submit" value="Process to Checkout">
+        </div>
+    </div>
+</div>
+        `;
         let removeCartItemButtons = document.querySelector('#remove');
         console.log(removeCartItemButtons);
         for ( let i = 0; i < removeCartItemButtons.length; i++){
@@ -271,23 +263,15 @@ function showDetailView(productElementId) {
         button.addEventListener('click', function (event) {
         let buttonClicked = event.target
         buttonClicked.parentElement.parentElement.remove()
-        })
-}   
+        })}
 
-        function updateCartTotals() {
-         let cartItemContainer = document.querySelector('.itemCart')[0]
-         let cartRows = cartItemContainer.getElementByClassName('cartProduct')
-         let total = 0
-            for (let i = 0; i < cartRows.length; i++) {
-                let cartRow = cartRows[i]
-                let priceElement = cartRow.querySelector('.price')
-            }
-                
-
-        }
+   }
 
   
+   let productCart = document.querySelector('#productCart');  
+   productCart.innerHTML = productCart     
   
- 
+   
 
+  
 
